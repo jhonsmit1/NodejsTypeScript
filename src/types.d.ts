@@ -16,3 +16,4 @@ interface specialDiaryEntry extends DiaryEntry {
 
 // export type NonSensitiveInfoDiaryEntry = Pick<DiaryEntry, 'id' | 'date' | 'weather' | 'visibility'>
 export type NonSensitiveInfoDiaryEntry = Omit<DiaryEntry,'comment'>
+export type newDiaryEntry = Omit <DiaryEntry,'id'>
